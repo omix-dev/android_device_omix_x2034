@@ -81,6 +81,14 @@ BOARD_ODM_DLKMIMAGE_FILE_SYSTEM_TYPE := erofs
 BOARD_SYSTEM_DLKMIMAGE_FILE_SYSTEM_TYPE := erofs
 BOARD_EROFS_COMPRESSOR := lz4
 
+# Logical partition mount points (separate dynamic partitions)
+TARGET_COPY_OUT_VENDOR := vendor
+TARGET_COPY_OUT_PRODUCT := product
+TARGET_COPY_OUT_SYSTEM_EXT := system_ext
+TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
+TARGET_COPY_OUT_ODM_DLKM := odm_dlkm
+TARGET_COPY_OUT_SYSTEM_DLKM := system_dlkm
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
