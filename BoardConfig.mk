@@ -149,3 +149,9 @@ BOARD_VNDK_VERSION := current
 TARGET_USES_MKE2FS := true
 # /odm has no separate partition; expose /vendor/odm at /odm.
 BOARD_ROOT_EXTRA_SYMLINKS := /odm:/vendor/odm
+
+# Stock MTK VINTF metadata is shipped from the vendor partition
+BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
+
+# Stock app-embedded JNI blobs are copied with their APKs
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
