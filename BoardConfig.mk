@@ -39,11 +39,11 @@ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 BOARD_PREBUILT_VENDOR_BOOTIMAGE := $(DEVICE_PATH)/prebuilt/vendor_boot.img
-BOARD_INCLUDE_DTB_IN_BOOTIMG := false
+BOARD_INCLUDE_DTB_IN_BOOTIMG :=
 
 # Recovery (this device has no recovery partition)
 TARGET_NO_RECOVERY := true
-BOARD_USES_RECOVERY_AS_BOOT := false
+BOARD_USES_RECOVERY_AS_BOOT :=
 
 # Partitions (stock sizes, sector-exact)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
